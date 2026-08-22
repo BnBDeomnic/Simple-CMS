@@ -46,7 +46,7 @@ export function PostsListPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-semibold">Posts</h1>
           <p className="text-sm text-muted-foreground">
@@ -79,33 +79,45 @@ export function PostsListPage() {
           <TableHeader>
             <TableRow>
               <TableHead>Title</TableHead>
-              <TableHead>Category</TableHead>
+              <TableHead className="hidden sm:table-cell">Category</TableHead>
               <TableHead>Status</TableHead>
-              {user?.role === "admin" && <TableHead>Author</TableHead>}
-              <TableHead>Updated</TableHead>
+              {user?.role === "admin" && (
+                <TableHead className="hidden md:table-cell">Author</TableHead>
+              )}
+              <TableHead className="hidden md:table-cell">Updated</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {data.data.map((post) => (
               <TableRow key={post.id}>
-                <TableCell className="font-medium">{post.title}</TableCell>
-                <TableCell>{post.category?.name ?? "—"}</TableCell>
+                <TableCell className="max-w-[110px] truncate font-medium sm:max-w-xs">
+                  {post.title}
+                </TableCell>
+                <TableCell className="hidden sm:table-cell">
+                  {post.category?.name ?? "—"}
+                </TableCell>
                 <TableCell>
                   <Badge variant={post.status === "published" ? "default" : "secondary"}>
                     {post.status === "published" ? "Published" : "Draft"}
                   </Badge>
                 </TableCell>
-                {user?.role === "admin" && <TableCell>{post.user?.name ?? "—"}</TableCell>}
-                <TableCell>{formatDate(post.updated_at)}</TableCell>
+                {user?.role === "admin" && (
+                  <TableCell className="hidden md:table-cell">
+                    {post.user?.name ?? "—"}
+                  </TableCell>
+                )}
+                <TableCell className="hidden md:table-cell">
+                  {formatDate(post.updated_at)}
+                </TableCell>
                 <TableCell className="text-right">
-                  <Button asChild variant="ghost" size="sm">
+                  <Button asChild variant="ghost" size="sm" className="px-2">
                     <Link to={`/admin/posts/${post.id}/edit`}>Edit</Link>
                   </Button>
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-destructive hover:text-destructive"
+                    className="px-2 text-destructive hover:text-destructive"
                     onClick={() => setPostToDelete(post)}
                   >
                     Delete

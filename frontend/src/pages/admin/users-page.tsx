@@ -108,7 +108,7 @@ export function UsersPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-semibold">Users</h1>
           <p className="text-sm text-muted-foreground">
@@ -131,7 +131,7 @@ export function UsersPage() {
           <TableHeader>
             <TableRow>
               <TableHead>Name</TableHead>
-              <TableHead>Email</TableHead>
+              <TableHead className="hidden sm:table-cell">Email</TableHead>
               <TableHead>Role</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
@@ -140,7 +140,9 @@ export function UsersPage() {
             {data.data.map((user) => (
               <TableRow key={user.id}>
                 <TableCell className="font-medium">{user.name}</TableCell>
-                <TableCell className="text-muted-foreground">{user.email}</TableCell>
+                <TableCell className="hidden text-muted-foreground sm:table-cell">
+                  {user.email}
+                </TableCell>
                 <TableCell>
                   <Badge
                     variant={user.role === "admin" ? "default" : "secondary"}

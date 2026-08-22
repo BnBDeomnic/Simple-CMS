@@ -87,7 +87,7 @@ export function CategoriesPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-semibold">Categories</h1>
           <p className="text-sm text-muted-foreground">Organize posts into topics.</p>
@@ -114,7 +114,7 @@ export function CategoriesPage() {
           <TableHeader>
             <TableRow>
               <TableHead>Name</TableHead>
-              <TableHead>Slug</TableHead>
+              <TableHead className="hidden sm:table-cell">Slug</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
@@ -122,7 +122,9 @@ export function CategoriesPage() {
             {categories.map((category) => (
               <TableRow key={category.id}>
                 <TableCell className="font-medium">{category.name}</TableCell>
-                <TableCell className="text-muted-foreground">{category.slug}</TableCell>
+                <TableCell className="hidden text-muted-foreground sm:table-cell">
+                  {category.slug}
+                </TableCell>
                 <TableCell className="text-right">
                   <Button variant="ghost" size="sm" onClick={() => openEdit(category)}>
                     Edit

@@ -22,13 +22,13 @@ export function AdminLayout() {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/70 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-6">
+        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <span className="flex items-center gap-2 font-semibold">
               <span className="size-2 rounded-full bg-primary" aria-hidden="true" />
               Simple CMS
             </span>
-            <nav className="flex gap-4">
+            <nav className="flex flex-wrap gap-4">
               <NavLink to="/admin/posts" className={linkClass}>
                 Posts
               </NavLink>
@@ -44,8 +44,8 @@ export function AdminLayout() {
               )}
             </nav>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="text-sm text-muted-foreground">
+          <div className="flex items-center justify-between gap-3 sm:justify-end">
+            <span className="truncate text-sm text-muted-foreground">
               {user?.name} <span className="capitalize">({user?.role})</span>
             </span>
             <Button variant="outline" size="sm" onClick={handleLogout}>
