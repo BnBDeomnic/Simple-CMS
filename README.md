@@ -2,6 +2,8 @@
 
 A blog CMS with a public homepage and a secure admin dashboard, built as a decoupled REST API (Laravel) + SPA (React) application.
 
+**Live frontend demo**: https://frontend-fawn-nine-13.vercel.app *(the backend runs locally — see setup below to run the full stack with real data; the live frontend alone won't be able to fetch posts without a running backend it can reach)*
+
 ## Features
 
 - **Multi-user system** with two roles:
@@ -116,4 +118,5 @@ Log in at `http://localhost:5173/admin/login`.
 The backend (`backend/`) is a standalone Laravel REST API and the frontend (`frontend/`) is a standalone React SPA — they can be deployed to any PHP-capable host and any static/Node host respectively, as long as `VITE_API_URL` (frontend) and `FRONTEND_URL`/CORS config (backend) are pointed at each other. A `backend/Dockerfile` is included for container-based hosts.
 
 - **Database**: this project was tested against a local PostgreSQL instance and [Neon](https://neon.tech) (serverless Postgres) for production.
-- **Frontend**: deployable to [Vercel](https://vercel.com) — set the **Root Directory** to `frontend` and the `VITE_API_URL` environment variable to your deployed backend URL.
+- **Frontend**: deployed to [Vercel](https://vercel.com) — **Root Directory** set to `frontend`. To point it at a live backend, set the `VITE_API_URL` environment variable in the Vercel project settings to your deployed backend URL and redeploy.
+- **Backend**: not deployed to a public host in this submission (most free container-hosting platforms require credit card verification). It runs correctly locally per the setup steps above, and includes a `backend/Dockerfile` ready for any Docker-based host (Render, Railway, Fly.io, etc.) if a live deployment is needed later.
