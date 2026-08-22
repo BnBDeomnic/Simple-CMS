@@ -15,8 +15,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+RUN composer install --no-dev --optimize-autoloader --no-interaction \
+    && chmod +x start.sh
 
 EXPOSE 3000
 
-CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-3000}
+CMD ["sh", "start.sh"]
