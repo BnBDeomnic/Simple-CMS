@@ -28,6 +28,7 @@ class StorePostRequest extends FormRequest
             'content' => ['required', 'string'],
             'category_id' => ['required', 'integer', 'exists:categories,id'],
             'status' => ['required', 'string', 'in:draft,published'],
+            'is_featured' => ['sometimes', 'boolean'],
         ];
     }
 }

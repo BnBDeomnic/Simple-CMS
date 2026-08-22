@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 
-#[Fillable(['title', 'slug', 'content', 'status', 'published_at', 'category_id', 'user_id'])]
+#[Fillable(['title', 'slug', 'content', 'status', 'is_featured', 'published_at', 'category_id', 'user_id'])]
 class Post extends Model
 {
     use HasFactory;
@@ -17,6 +17,7 @@ class Post extends Model
     {
         return [
             'published_at' => 'datetime',
+            'is_featured' => 'boolean',
         ];
     }
 

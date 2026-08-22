@@ -1,0 +1,28 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - banner [ref=f11e4]:
+      - generic [ref=f11e5]:
+        - generic [ref=f11e6]:
+          - link "Simple CMS Blog" [ref=f11e7] [cursor=pointer]:
+            - /url: /
+          - link "Admin Login" [ref=f11e9] [cursor=pointer]:
+            - /url: /admin/login
+        - navigation [ref=f11e10]:
+          - link "Home" [ref=f11e11] [cursor=pointer]:
+            - /url: /
+          - link "Latest" [ref=f11e12] [cursor=pointer]:
+            - /url: /latest
+          - link "Top 10" [ref=f11e13] [cursor=pointer]:
+            - /url: /top-10
+    - main [ref=f11e14]:
+      - generic [ref=f11e15]:
+        - generic [ref=f11e16]:
+          - heading "Latest Posts" [level=1] [ref=f11e17]
+          - paragraph [ref=f11e18]: The newest posts, freshest first.
+        - paragraph [ref=f11e19]: Loading posts…
+    - contentinfo [ref=f11e20]:
+      - generic [ref=f11e21]:
+        - paragraph [ref=f11e22]: Simple CMS Blog
+        - paragraph [ref=f11e23]: Short reads on the things we're building and learning.
+        - paragraph [ref=f11e24]: © 2026 Simple CMS Blog. All rights reserved.
+  - region "Notifications alt+T"

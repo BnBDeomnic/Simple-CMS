@@ -1,0 +1,27 @@
+- generic [ref=f5e2]:
+  - generic [ref=f5e3]:
+    - banner [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - generic [ref=f5e6]:
+          - generic [ref=f5e7]: Simple CMS
+          - navigation [ref=f5e8]:
+            - link "Posts" [ref=f5e9] [cursor=pointer]:
+              - /url: /admin/posts
+            - link "Categories" [ref=f5e10] [cursor=pointer]:
+              - /url: /admin/categories
+            - link "Users" [ref=f5e11] [cursor=pointer]:
+              - /url: /admin/users
+        - generic [ref=f5e12]:
+          - generic [ref=f5e13]:
+            - text: Admin
+            - generic [ref=f5e14]: (admin)
+          - button "Log Out" [ref=f5e15]
+    - main [ref=f5e16]:
+      - generic [ref=f5e17]:
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]:
+            - heading "Users" [level=1] [ref=f5e20]
+            - paragraph [ref=f5e21]: Manage who can access the admin panel.
+          - button "New User" [ref=f5e22]
+        - paragraph [ref=f5e23]: Loading users…
+  - region "Notifications alt+T"

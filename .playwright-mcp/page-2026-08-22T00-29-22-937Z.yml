@@ -1,0 +1,156 @@
+- generic [ref=f13e2]:
+  - generic [ref=f13e3]:
+    - banner [ref=f13e4]:
+      - generic [ref=f13e5]:
+        - generic [ref=f13e6]:
+          - generic [ref=f13e7]: Simple CMS
+          - navigation [ref=f13e9]:
+            - link "Posts" [ref=f13e10] [cursor=pointer]:
+              - /url: /admin/posts
+            - link "Categories" [ref=f13e11] [cursor=pointer]:
+              - /url: /admin/categories
+            - link "Users" [ref=f13e12] [cursor=pointer]:
+              - /url: /admin/users
+        - generic [ref=f13e13]:
+          - generic [ref=f13e14]:
+            - text: Budi Santoso
+            - generic [ref=f13e15]: (admin)
+          - button "Log Out" [ref=f13e16]
+    - main [ref=f13e17]:
+      - generic [ref=f13e63]:
+        - generic [ref=f13e64]:
+          - generic [ref=f13e65]:
+            - heading "Posts" [level=1] [ref=f13e66]
+            - paragraph [ref=f13e67]: All posts across every author.
+          - link "New Post" [ref=f13e68] [cursor=pointer]:
+            - /url: /admin/posts/new
+        - table [ref=f13e70]:
+          - rowgroup [ref=f13e71]:
+            - row [ref=f13e72]:
+              - columnheader "Title" [ref=f13e73]
+              - columnheader "Category" [ref=f13e74]
+              - columnheader "Status" [ref=f13e75]
+              - columnheader "Author" [ref=f13e76]
+              - columnheader "Updated" [ref=f13e77]
+              - columnheader "Actions" [ref=f13e78]
+          - rowgroup [ref=f13e79]:
+            - row [ref=f13e80]:
+              - cell "Memahami React Server Components" [ref=f13e81]
+              - cell "Technology" [ref=f13e82]
+              - cell "Published" [ref=f13e83]
+              - cell "Dewi Lestari" [ref=f13e85]
+              - cell "August 22, 2026" [ref=f13e86]
+              - cell [ref=f13e87]:
+                - link "Edit" [ref=f13e88] [cursor=pointer]:
+                  - /url: /admin/posts/2/edit
+                - button "Delete" [ref=f13e89]
+            - row [ref=f13e90]:
+              - cell "Panduan Praktis Generics di TypeScript" [ref=f13e91]
+              - cell "Technology" [ref=f13e92]
+              - cell "Published" [ref=f13e93]
+              - cell "Rina Wijaya" [ref=f13e95]
+              - cell "August 22, 2026" [ref=f13e96]
+              - cell [ref=f13e97]:
+                - link "Edit" [ref=f13e98] [cursor=pointer]:
+                  - /url: /admin/posts/3/edit
+                - button "Delete" [ref=f13e99]
+            - row [ref=f13e100]:
+              - cell "Mengapa Kami Bermigrasi ke PostgreSQL" [ref=f13e101]
+              - cell "Technology" [ref=f13e102]
+              - cell "Draft" [ref=f13e103]
+              - cell "Budi Santoso" [ref=f13e105]
+              - cell "August 22, 2026" [ref=f13e106]
+              - cell [ref=f13e107]:
+                - link "Edit" [ref=f13e108] [cursor=pointer]:
+                  - /url: /admin/posts/4/edit
+                - button "Delete" [ref=f13e109]
+            - row [ref=f13e110]:
+              - cell "Lima Tips Bekerja dari Rumah" [ref=f13e111]
+              - cell "Business" [ref=f13e112]
+              - cell "Published" [ref=f13e113]
+              - cell "Budi Santoso" [ref=f13e115]
+              - cell "August 22, 2026" [ref=f13e116]
+              - cell [ref=f13e117]:
+                - link "Edit" [ref=f13e118] [cursor=pointer]:
+                  - /url: /admin/posts/5/edit
+                - button "Delete" [ref=f13e119]
+            - row [ref=f13e120]:
+              - cell "Cara Menentukan Harga Produk SaaS" [ref=f13e121]
+              - cell "Business" [ref=f13e122]
+              - cell "Published" [ref=f13e123]
+              - cell "Dewi Lestari" [ref=f13e125]
+              - cell "August 22, 2026" [ref=f13e126]
+              - cell [ref=f13e127]:
+                - link "Edit" [ref=f13e128] [cursor=pointer]:
+                  - /url: /admin/posts/6/edit
+                - button "Delete" [ref=f13e129]
+            - row [ref=f13e130]:
+              - cell "Membangun Budaya Startup yang Berkelanjutan" [ref=f13e131]
+              - cell "Business" [ref=f13e132]
+              - cell "Draft" [ref=f13e133]
+              - cell "Rina Wijaya" [ref=f13e135]
+              - cell "August 22, 2026" [ref=f13e136]
+              - cell [ref=f13e137]:
+                - link "Edit" [ref=f13e138] [cursor=pointer]:
+                  - /url: /admin/posts/7/edit
+                - button "Delete" [ref=f13e139]
+            - row [ref=f13e140]:
+              - cell "Minimalisme dalam Kehidupan Sehari-hari" [ref=f13e141]
+              - cell "Lifestyle" [ref=f13e142]
+              - cell "Published" [ref=f13e143]
+              - cell "Dewi Lestari" [ref=f13e145]
+              - cell "August 22, 2026" [ref=f13e146]
+              - cell [ref=f13e147]:
+                - link "Edit" [ref=f13e148] [cursor=pointer]:
+                  - /url: /admin/posts/8/edit
+                - button "Delete" [ref=f13e149]
+            - row [ref=f13e150]:
+              - cell "Membangun Rutinitas Pagi yang Lebih Baik" [ref=f13e151]
+              - cell "Lifestyle" [ref=f13e152]
+              - cell "Published" [ref=f13e153]
+              - cell "Rina Wijaya" [ref=f13e155]
+              - cell "August 22, 2026" [ref=f13e156]
+              - cell [ref=f13e157]:
+                - link "Edit" [ref=f13e158] [cursor=pointer]:
+                  - /url: /admin/posts/9/edit
+                - button "Delete" [ref=f13e159]
+            - row [ref=f13e160]:
+              - cell "Seni Mengatakan Tidak" [ref=f13e161]
+              - cell "Lifestyle" [ref=f13e162]
+              - cell "Draft" [ref=f13e163]
+              - cell "Dewi Lestari" [ref=f13e165]
+              - cell "August 22, 2026" [ref=f13e166]
+              - cell [ref=f13e167]:
+                - link "Edit" [ref=f13e168] [cursor=pointer]:
+                  - /url: /admin/posts/10/edit
+                - button "Delete" [ref=f13e169]
+            - row [ref=f13e170]:
+              - cell "Liburan Akhir Pekan ke Pegunungan" [ref=f13e171]
+              - cell "Travel" [ref=f13e172]
+              - cell "Published" [ref=f13e173]
+              - cell "Rina Wijaya" [ref=f13e175]
+              - cell "August 22, 2026" [ref=f13e176]
+              - cell [ref=f13e177]:
+                - link "Edit" [ref=f13e178] [cursor=pointer]:
+                  - /url: /admin/posts/11/edit
+                - button "Delete" [ref=f13e179]
+        - navigation "pagination" [ref=f13e180]:
+          - list [ref=f13e181]:
+            - listitem [ref=f13e182]:
+              - link "Go to previous page" [disabled]:
+                - /url: "#"
+                - generic: Previous
+            - listitem [ref=f13e183]:
+              - link "1" [ref=f13e184] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f13e185]:
+              - link "2" [ref=f13e186] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f13e187]:
+              - link "Go to next page" [ref=f13e188] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f13e189]: Next
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=f13e190]:
+        - generic [ref=f13e195]: Post updated.

@@ -1,0 +1,17 @@
+- generic [ref=f10e2]:
+  - generic [ref=f10e3]:
+    - banner [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - generic [ref=f10e6]:
+          - generic [ref=f10e7]: Simple CMS
+          - navigation [ref=f10e8]:
+            - link "Posts" [ref=f10e9] [cursor=pointer]:
+              - /url: /admin/posts
+        - generic [ref=f10e10]:
+          - generic [ref=f10e11]:
+            - text: Author
+            - generic [ref=f10e12]: (author)
+          - button "Log Out" [ref=f10e13]
+    - main [ref=f10e14]:
+      - paragraph [ref=f10e15]: Loading post…
+  - region "Notifications alt+T"

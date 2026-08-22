@@ -1,0 +1,60 @@
+- generic:
+  - generic:
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - generic: Simple CMS
+            - navigation:
+              - link:
+                - /url: /admin/posts
+                - text: Posts
+              - link:
+                - /url: /admin/categories
+                - text: Categories
+              - link:
+                - /url: /admin/users
+                - text: Users
+          - generic:
+            - generic:
+              - text: Admin
+              - generic: (admin)
+            - button: Log Out
+      - main:
+        - generic:
+          - heading [level=1]: New Post
+          - generic:
+            - generic:
+              - generic: Title
+              - textbox:
+                - /placeholder: Give your post a clear, descriptive title
+                - text: Testing the New Post Form
+            - generic:
+              - generic: Content
+              - generic:
+                - generic:
+                  - button
+                  - button
+                  - button
+                  - button
+                  - button
+                - generic:
+                  - generic:
+                    - paragraph: This is a test post created via Playwright to verify the Tiptap editor works end to end.
+            - generic:
+              - generic: Category
+              - combobox:
+                - generic: Technology
+              - combobox
+            - generic:
+              - generic: Status
+              - combobox [expanded]:
+                - generic: Draft — only visible to you
+              - combobox
+            - generic:
+              - button: Save Draft
+              - button: Cancel
+    - region "Notifications alt+T"
+  - listbox [ref=f1e160]:
+    - option "Draft — only visible to you" [active] [selected] [ref=f1e161]
+    - option "Published — visible on the homepage" [ref=f1e165]

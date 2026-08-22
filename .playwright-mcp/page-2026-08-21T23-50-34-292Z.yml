@@ -1,0 +1,42 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - generic [ref=f1e6]:
+          - link "Simple CMS Blog" [ref=f1e7] [cursor=pointer]:
+            - /url: /
+          - link "Admin Login" [ref=f1e8] [cursor=pointer]:
+            - /url: /admin/login
+        - navigation [ref=f1e9]:
+          - link "Home" [ref=f1e10] [cursor=pointer]:
+            - /url: /
+          - link "Business" [ref=f1e29] [cursor=pointer]:
+            - /url: /?category=business
+          - link "Lifestyle" [ref=f1e30] [cursor=pointer]:
+            - /url: /?category=lifestyle
+          - link "Travel" [ref=f1e31] [cursor=pointer]:
+            - /url: /?category=travel
+    - main [ref=f1e11]:
+      - generic [ref=f1e12]:
+        - generic [ref=f1e13]:
+          - heading "Simple CMS Blog" [level=1] [ref=f1e14]
+          - paragraph [ref=f1e15]: Short reads on the things we're building and learning.
+        - generic [ref=f1e16]:
+          - textbox "Search posts…" [active] [ref=f1e21]: typescript
+          - combobox [ref=f1e22]:
+            - generic: All categories
+        - article [ref=f1e57]:
+          - generic [ref=f1e58]:
+            - generic [ref=f1e59]: Lifestyle
+            - generic [ref=f1e60]: August 22, 2026
+          - heading [level=2] [ref=f1e61]:
+            - link "Why TypeScript Makes React Better" [ref=f1e62] [cursor=pointer]:
+              - /url: /post/why-typescript-makes-react-better
+          - paragraph [ref=f1e63]: This is sample content for "Why TypeScript Makes React Better".
+          - paragraph [ref=f1e64]: By Author
+    - contentinfo [ref=f1e24]:
+      - generic [ref=f1e25]:
+        - paragraph [ref=f1e26]: Simple CMS Blog
+        - paragraph [ref=f1e27]: Short reads on the things we're building and learning.
+        - paragraph [ref=f1e28]: © 2026 Simple CMS Blog. All rights reserved.
+  - region "Notifications alt+T"

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 // Public routes (no auth required) — consumed by the homepage.
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/public/posts', [PublicPostController::class, 'index']);
+Route::get('/public/posts/top-10', [PublicPostController::class, 'topTen']);
+Route::get('/public/categories', [PublicPostController::class, 'categories']);
 Route::get('/public/posts/{slug}', [PublicPostController::class, 'show']);
 
 // Admin panel routes — require a valid Sanctum token.

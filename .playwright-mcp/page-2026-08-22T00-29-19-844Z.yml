@@ -1,0 +1,68 @@
+- generic [ref=f13e2]:
+  - generic [ref=f13e3]:
+    - banner [ref=f13e4]:
+      - generic [ref=f13e5]:
+        - generic [ref=f13e6]:
+          - generic [ref=f13e7]: Simple CMS
+          - navigation [ref=f13e9]:
+            - link "Posts" [ref=f13e10] [cursor=pointer]:
+              - /url: /admin/posts
+            - link "Categories" [ref=f13e11] [cursor=pointer]:
+              - /url: /admin/categories
+            - link "Users" [ref=f13e12] [cursor=pointer]:
+              - /url: /admin/users
+        - generic [ref=f13e13]:
+          - generic [ref=f13e14]:
+            - text: Budi Santoso
+            - generic [ref=f13e15]: (admin)
+          - button "Log Out" [ref=f13e16]
+    - main [ref=f13e17]:
+      - generic [ref=f13e19]:
+        - heading "Edit Post" [level=1] [ref=f13e20]
+        - generic [ref=f13e21]:
+          - generic [ref=f13e22]:
+            - generic [ref=f13e23]: Title
+            - textbox "Title" [ref=f13e24]:
+              - /placeholder: Give your post a clear, descriptive title
+              - text: Memulai dengan Laravel
+          - generic [ref=f13e25]:
+            - generic [ref=f13e26]: Content
+            - generic [ref=f13e27]:
+              - generic [ref=f13e28]:
+                - button "Bold" [ref=f13e29]
+                - button "Italic" [ref=f13e30]
+                - button "Heading" [ref=f13e31]
+                - button "Bullet list" [ref=f13e32]
+                - button "Numbered list" [ref=f13e33]
+              - generic [ref=f13e35]:
+                - paragraph [ref=f13e36]: "Laravel jadi salah satu framework PHP paling populer, dan itu bukan tanpa alasan: framework ini mengurus bagian-bagian repetitif dalam membangun aplikasi web — routing, autentikasi, migrasi database — supaya kamu bisa fokus ke fitur yang benar-benar penting buat pengguna."
+                - heading "Kenapa Laravel?" [level=2] [ref=f13e37]
+                - paragraph [ref=f13e38]: Kalau kamu pernah pakai PHP sebelum era Laravel, kamu tahu betapa banyaknya boilerplate yang dulu terlibat bahkan untuk aplikasi CRUD sederhana. Eloquent ORM, routing yang ekspresif, dan tooling bawaan (Artisan) memangkas itu semua secara drastis.
+                - list [ref=f13e39]:
+                  - listitem [ref=f13e40]:
+                    - paragraph [ref=f13e41]: Sintaks elegan yang hampir seperti membaca bahasa Inggris biasa
+                  - listitem [ref=f13e42]:
+                    - paragraph [ref=f13e43]: "Ekosistem yang kaya: Sanctum untuk autentikasi API, Cashier untuk billing, Horizon untuk queue"
+                  - listitem [ref=f13e44]:
+                    - paragraph [ref=f13e45]: Dokumentasi yang bagus dan komunitas yang besar serta aktif
+                - paragraph [ref=f13e46]: Di tulisan ini kita membahas cara setup project Laravel baru, menghubungkan koneksi database, dan menjalankan migration pertama. Kalau kamu datang dari framework lain, kurva belajarnya cukup landai — sebagian besar konsepnya mirip dengan yang sudah kamu kenal.
+          - generic [ref=f13e47]:
+            - generic [ref=f13e48]: Category
+            - combobox "Category" [ref=f13e49]:
+              - generic: Technology
+            - combobox [ref=f13e50]
+          - generic [ref=f13e51]:
+            - generic [ref=f13e52]: Status
+            - combobox "Status" [ref=f13e53]:
+              - generic: Published — visible on the homepage
+            - combobox [ref=f13e54]
+          - generic [ref=f13e55]:
+            - checkbox "Mark as Featured" [active] [ref=f13e56]
+            - checkbox
+            - generic [ref=f13e57]:
+              - generic [ref=f13e58]: Mark as Featured
+              - paragraph [ref=f13e59]: Featured posts appear first on the homepage's Top 10 list.
+          - generic [ref=f13e60]:
+            - button "Publish Post" [ref=f13e61]
+            - button "Cancel" [ref=f13e62]
+  - region "Notifications alt+T"

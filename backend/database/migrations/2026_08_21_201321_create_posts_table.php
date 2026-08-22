@@ -14,6 +14,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->longText('content');
             $table->enum('status', ['draft', 'published'])->default('draft');
+            $table->boolean('is_featured')->default(false);
             $table->timestamp('published_at')->nullable();
             $table->foreignId('category_id')->constrained()->restrictOnDelete();
             $table->foreignId('user_id')->constrained()->restrictOnDelete();

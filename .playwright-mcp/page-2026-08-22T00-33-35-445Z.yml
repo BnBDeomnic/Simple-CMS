@@ -1,0 +1,28 @@
+- generic [ref=f16e2]:
+  - generic [ref=f16e3]:
+    - banner [ref=f16e4]:
+      - generic [ref=f16e5]:
+        - generic [ref=f16e6]:
+          - link "Simple CMS Blog" [ref=f16e7] [cursor=pointer]:
+            - /url: /
+          - link "Admin Login" [ref=f16e9] [cursor=pointer]:
+            - /url: /admin/login
+        - navigation [ref=f16e10]:
+          - link "Home" [ref=f16e11] [cursor=pointer]:
+            - /url: /
+          - link "Latest" [ref=f16e12] [cursor=pointer]:
+            - /url: /latest
+          - link "Top 10" [ref=f16e13] [cursor=pointer]:
+            - /url: /top-10
+    - main [ref=f16e14]:
+      - generic [ref=f16e15]:
+        - generic [ref=f16e16]:
+          - heading "Post Terbaru" [level=1] [ref=f16e17]
+          - paragraph [ref=f16e18]: Post-post terbaru, yang paling baru duluan.
+        - paragraph [ref=f16e19]: Memuat post…
+    - contentinfo [ref=f16e20]:
+      - generic [ref=f16e21]:
+        - paragraph [ref=f16e22]: Simple CMS Blog
+        - paragraph [ref=f16e23]: Bacaan singkat tentang hal-hal yang sedang kami bangun dan pelajari.
+        - paragraph [ref=f16e24]: © 2026 Simple CMS Blog. All rights reserved.
+  - region "Notifications alt+T"

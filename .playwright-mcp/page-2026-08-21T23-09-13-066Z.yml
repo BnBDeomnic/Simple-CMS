@@ -1,0 +1,24 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e62]:
+    - banner [ref=f7e63]:
+      - generic [ref=f7e64]:
+        - generic [ref=f7e65]:
+          - generic [ref=f7e66]: Simple CMS
+          - navigation [ref=f7e67]:
+            - link "Posts" [ref=f7e68] [cursor=pointer]:
+              - /url: /admin/posts
+        - generic [ref=f7e69]:
+          - generic [ref=f7e70]:
+            - text: Author
+            - generic [ref=f7e71]: (author)
+          - button "Log Out" [ref=f7e72]
+    - main [ref=f7e73]:
+      - generic [ref=f7e74]:
+        - generic [ref=f7e75]:
+          - generic [ref=f7e76]:
+            - heading "Posts" [level=1] [ref=f7e77]
+            - paragraph [ref=f7e78]: Posts you've written.
+          - link "New Post" [ref=f7e79] [cursor=pointer]:
+            - /url: /admin/posts/new
+        - paragraph [ref=f7e80]: Loading posts…
+  - region "Notifications alt+T"

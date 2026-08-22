@@ -1,0 +1,20 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Simple CMS Blog" [ref=e6] [cursor=pointer]:
+        - /url: /
+    - main [ref=e7]:
+      - article [ref=e63]:
+        - link "Back to all posts" [ref=e64] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Technology
+            - generic [ref=e70]: August 22, 2026
+          - heading "Getting Started with Laravel" [level=1] [ref=e71]
+          - paragraph [ref=e72]: By Admin
+        - paragraph [ref=e74]: This is sample content for "Getting Started with Laravel".
+    - contentinfo [ref=e20]:
+      - link "Admin Login" [ref=e21] [cursor=pointer]:
+        - /url: /admin/login
+  - region "Notifications alt+T"
