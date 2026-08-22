@@ -1,0 +1,8 @@
+# Playwright MCP test artifacts (screenshots, console logs) — local only
+.playwright-mcp/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
